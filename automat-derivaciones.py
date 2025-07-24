@@ -10,6 +10,7 @@ df_final = pd.DataFrame({
     'Nombre': df_merge['nombres'],
     'Nro de Factura': '',
     'CBU/Alias': df_merge['cbu/alias'],
+    'CUIT': df_merge['cuit'],
     'Monto': df_merge['monto'],
     'Mail' : df_merge['mail'],
     'Observaciones': ''
