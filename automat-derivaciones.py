@@ -12,9 +12,15 @@ df_final = pd.DataFrame({
     'CBU/Alias': df_merge['cbu/alias'],
     'CUIT': df_merge['cuit'],
     'Monto': df_merge['monto'],
-    'Mail' : df_merge['mail'],
+    'Email' : df_merge['mail'],
     'Observaciones': ''
 })
+
+df_final['Monto'] = (
+    df_final['Monto'].astype(str).str.strip().str.replace(",", "", regex=False)
+)
+df_final['Monto'] = pd.to_numeric(df_final['Monto'], errors='coerce')
+
 
 archivo_final = 'ordenes_pago_2025.xlsx'
 

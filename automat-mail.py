@@ -15,7 +15,7 @@ NOMBRE_EMPRESA = os.getenv("NOMBRE_EMPRESA")
 
 ARCHIVO_EXCEL = 'ordenes_pago_2025.xlsx'  
 HOJA = input("Nombre de la hoja a usar: ")
-MES_ACTUAL = input("Mes de facturacion): ")
+MES_ACTUAL = input("Mes de facturacion: ")
 FECHA_LIMITE = input("Fecha límite para recibir facturas: ")
 
 df = pd.read_excel(ARCHIVO_EXCEL, sheet_name=HOJA)
@@ -42,13 +42,14 @@ for _, row in df.iterrows():
     mensaje['From'] = EMAIL
     mensaje['To'] = destinatario
 
-    cuerpo = f"""Buen día,
+    cuerpo = f"""\
+Buen día,
 
 Le indico la información para emitir la factura correspondiente a las derivaciones del mes de {MES_ACTUAL}.
 
-* Total: ${monto:,.2f}
-* CUIT: {CUIT}
-* Concepto: Honorarios
+• Total: ${monto:,.2f}
+• CUIT: {CUIT}
+• Concepto: Honorarios
 
 El plazo para la recepción de facturas vence el {FECHA_LIMITE}.
 
