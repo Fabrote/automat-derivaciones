@@ -19,19 +19,6 @@ Este proyecto automatiza la gestión de pagos mensuales por derivaciones médica
 
 ---
 
-## 📁 Estructura del proyecto
-
-automat_derivaciones/
-│
-├── automat-excel.py # Script para generar hoja de pagos mensual
-├── automat-mail.py # Script para enviar emails personalizados
-├── datos/
-│ ├── origen.xlsx # Excel con nombres y montos
-│ ├── profesionales.xlsx # Excel con CUIT, CBU/Alias y mails
-│ └── ordenes_pago.xlsx # Excel generado con hoja nueva por mes
-├── .env # Archivo con credenciales y configuración
-└── README.md # Este archivo
-
 
 ✅ ¿Cómo funciona?
 ---
