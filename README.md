@@ -23,7 +23,8 @@ Este proyecto automatiza la gestión de pagos mensuales por derivaciones médica
 ✅ ¿Cómo funciona?
 ---
 
-1. Generación del Excel
+1- Generación del Excel
+
 Ejecutá:
 
 python automat-excel.py
@@ -37,7 +38,8 @@ Crea o actualiza ordenes_pago.xlsx, agregando una hoja nueva con los datos del m
 
 Deja columnas vacías para Nº de factura y observaciones.
 
-2. Envío de emails
+2- Envío de emails
+
 Ejecutá:
 
 python automat-mail.py
@@ -76,5 +78,6 @@ Exportación a PDF del resumen mensual.
 🤟 Autor
 ---
 Fabrizio
+
 Hecho para uso interno de Empresa de Salud.
 
